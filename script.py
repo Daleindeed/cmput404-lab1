@@ -1,3 +1,4 @@
 import requests
-URL = "http://www.google.com/"
-print(requests.get(url = URL))
+URL = "https://raw.githubusercontent.com/Daleindeed/cmput404-lab1/main/script.py"
+r = requests.get(URL)
+open('download.py', 'wb').write(r.content)
